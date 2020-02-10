@@ -32,6 +32,72 @@ let black = Color(hue: 0, saturation: 100, brightness: 0, alpha: 100)
 
 // Begin your solution here...
 
+//Set the backgroung color
+canvas.fillColor = darkGrey
+canvas.drawShapesWithBorders = false
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: canvas.width, height: canvas.height)
+
+////Move the origin
+canvas.translate(to: Point(x: 0, y: 400))
+
+//Rotate
+canvas.rotate(by: -400)
+
+
+for i in stride(from: 19, through: 30 * 40, by: 35) {
+    
+    //Set thickness
+    //let thickness = (20)
+    
+    // Draw the line
+    canvas.drawLine(from: Point(x: i, y: 250), to: Point(x: i, y: -400), lineWidth: 20, capStyle:.square)
+    
+    
+        
+    }
+
+//Rotate
+canvas.rotate(by: 400)
+
+//Draw rectangle
+canvas.fillColor = darkGrey
+canvas.drawShapesWithBorders = false
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: 700, height: 200)
+
+
+//canvas.rotate(by: 20)
+
+//Create black lines
+//for position in stride(from: 10, through: 300, by: 25){
+    
+    //position
+    
+    //Set thickness of lines
+    //let thickness = (200 - position / 10)
+    
+    //canvas.drawLine(from: Point(x: position, y: 0), to: Point(x: position, y: 360), lineWidth: thickness)
+    
+    
+//}
+
+//Create grey lines
+
+//canvas.fillColor = darkGrey
+
+//for position in stride(from: 0, through: 100, by: 10){
+    
+    //position
+    
+    //Set tkickness lines
+    //let thickness = position / 10
+    
+    //canvas.drawLine(from: Point(x: position, y: 0), to: Point(x: position, y: 360), lineWidth: thickness)
+    
+//}
+
+
+
+
 
 /*:
  ## Use Source Control
